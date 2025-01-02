@@ -49,14 +49,15 @@ imageLinks.forEach(link => {
     });
 });
 
+// Function to open the lightbox and display the clicked image
 function openLightbox(link) {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
-    lightbox.style.display = 'block';
-    lightboxImg.src = link.querySelector('img').src;  // Set the lightbox image source to the clicked image source
+    lightbox.style.display = 'flex'; // Display as flex to trigger centering
+    lightboxImg.src = link.querySelector('img').src;  // Set image source from clicked image
 }
 
 // Close the lightbox when clicking the close button
 document.getElementById("close-lightbox").addEventListener('click', function() {
-    document.getElementById("lightbox").style.display = 'none';
+    document.getElementById("lightbox").style.display = 'none'; // Hide the lightbox
 });
