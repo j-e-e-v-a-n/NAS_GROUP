@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category 1 - Resin Creations</title>
+    <title>Category 3 - Resin Creations</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Header and Navbar -->
     <header>
@@ -18,7 +20,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/#gallery">Gallery</a></li>
                 <li><a href="/#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/contactus.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +29,10 @@
     <main>
         <section id="category">
             <h2>Resin Wedding Preserved</h2>
-            <p>The Resin Wedding Preserved collection encapsulates the timeless beauty of your special day. Flowers, rings, and other memorable keepsakes are preserved in resin to create everlasting pieces of art. These personalized treasures capture the emotions and memories of a wedding, turning them into stunning, durable artwork that can be cherished for a lifetime.</p>
+            <p>The Resin Wedding Preserved collection encapsulates the timeless beauty of your special day. Flowers,
+                rings, and other memorable keepsakes are preserved in resin to create everlasting pieces of art. These
+                personalized treasures capture the emotions and memories of a wedding, turning them into stunning,
+                durable artwork that can be cherished for a lifetime.</p>
             <div class="gallery">
                 <div class="art-piece">
                     <a class="image-link">
@@ -39,38 +44,49 @@
                         <img src="../images/Mold/mold (2).jpg" alt="Resin Artwork 3" class="art-image">
                     </a>
                 </div>
-            <div class="art-piece">
-                <a href="#" class="image-link">
-                    <img src="../images/Mold/mold (3).jpg" alt="Resin Artwork 3" class="art-image">
-                </a>
+                <div class="art-piece">
+                    <a href="#" class="image-link">
+                        <img src="../images/Mold/mold (3).jpg" alt="Resin Artwork 3" class="art-image">
+                    </a>
+                </div>
+                <div class="art-piece">
+                    <a href="#" class="image-link">
+                        <img src="../images/Mold/mold (4).jpg" alt="Resin Artwork 3" class="art-image">
+                    </a>
+                </div>
+                <div class="art-piece">
+                    <a href="#" class="image-link">
+                        <img src="../images/Mold/mold (5).jpg" alt="Resin Artwork 3" class="art-image">
+                    </a>
+                </div>
+                <div class="art-piece">
+                    <a href="#" class="image-link">
+                        <img src="../images/Mold/mold (6).jpg" alt="Resin Artwork 3" class="art-image">
+                    </a>
+                </div>
+                <div class="art-piece">
+                    <a href="#" class="image-link">
+                        <img src="../images/Mold/mold (7).jpg" alt="Resin Artwork 3" class="art-image">
+                    </a>
+                </div>
+                <div class="art-piece">
+                    <a href="#" class="image-link">
+                        <img src="../images/Mold/mold (8).jpg" alt="Resin Artwork 3" class="art-image">
+                    </a>
+                </div>
             </div>
-            <div class="art-piece">
-                <a href="#" class="image-link">
-                    <img src="../images/Mold/mold (4).jpg" alt="Resin Artwork 3" class="art-image">
-                </a>
-            </div>
-            <div class="art-piece">
-                <a href="#" class="image-link">
-                    <img src="../images/Mold/mold (5).jpg" alt="Resin Artwork 3" class="art-image">
-                </a>
-            </div>
-            <div class="art-piece">
-                <a href="#" class="image-link">
-                    <img src="../images/Mold/mold (6).jpg" alt="Resin Artwork 3" class="art-image">
-                </a>
-            </div>
-            <div class="art-piece">
-                <a href="#" class="image-link">
-                    <img src="../images/Mold/mold (7).jpg" alt="Resin Artwork 3" class="art-image">
-                </a>
-            </div>
-            <div class="art-piece">
-                <a href="#" class="image-link">
-                    <img src="../images/Mold/mold (8).jpg" alt="Resin Artwork 3" class="art-image">
-                </a>
-            </div>
-        </div>
-            <a href="more-details.html" class="button">Learn More</a>
+            <a id="whatsapp-link" href="#" class="button">Learn More</a>
+
+            <script>
+                // JavaScript to dynamically create the WhatsApp URL
+                const phoneNumber = "919526271389"; // Replace with the actual phone number
+                const message = "Hello! I would love to learn more about Wedding Preserved Resin Art!"; // Replace with the desired message
+                const encodedMessage = encodeURIComponent(message);
+
+                // Set the href attribute of the "Learn More" button to the WhatsApp URL
+                const whatsappLink = document.getElementById("whatsapp-link");
+                whatsappLink.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            </script>
         </section>
     </main>
 
@@ -87,4 +103,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

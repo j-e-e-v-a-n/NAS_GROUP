@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category 1 - Resin Creations</title>
+    <title>Category 2 - Resin Creations</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/#gallery">Gallery</a></li>
                 <li><a href="/#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/contactus.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +45,19 @@
                 </a>
             </div>
         </div>
-            <a href="more-details.html" class="button">Learn More</a>
+           <a id="whatsapp-link" href="#" class="button">Learn More</a>
+
+           <script>
+               // JavaScript to dynamically create the WhatsApp URL
+               const phoneNumber = "919526271389"; // Replace with the actual phone number
+               const message = "Hello! I would love to learn more about Live Edge Mirror!"; // Replace with the desired message
+               const encodedMessage = encodeURIComponent(message);
+           
+               // Set the href attribute of the "Learn More" button to the WhatsApp URL
+               const whatsappLink = document.getElementById("whatsapp-link");
+               whatsappLink.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+               window.open(link, '_blank');
+           </script>
         </section>
     </main>
 

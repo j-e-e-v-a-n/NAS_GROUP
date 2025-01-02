@@ -40,3 +40,23 @@ document.addEventListener('click', (event) => {
         navLinks.classList.remove('active'); // Close the menu if clicked outside
     }
 });
+
+const imageLinks = document.querySelectorAll('.image-link');
+imageLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent the default anchor link behavior
+        openLightbox(this);  // Optionally, add logic for opening the lightbox here
+    });
+});
+
+function openLightbox(link) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightbox.style.display = 'block';
+    lightboxImg.src = link.querySelector('img').src;  // Set the lightbox image source to the clicked image source
+}
+
+// Close the lightbox when clicking the close button
+document.getElementById("close-lightbox").addEventListener('click', function() {
+    document.getElementById("lightbox").style.display = 'none';
+});
