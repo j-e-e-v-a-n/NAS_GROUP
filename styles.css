@@ -6,7 +6,7 @@ body {
     background-color: #00978814;
     line-height: 1.6;
 }
-section{
+section {
     padding-left: 20px;
 }
 
@@ -77,12 +77,14 @@ nav ul a:hover {
 /* Mobile Menu */
 @media (max-width: 768px) {
     header img {
-        width: 80px; /* Reduced logo size in mobile view */
+        width: 80px;
         height: 80px;
     }
-    nav{
+
+    nav {
         height: 50px;
     }
+
     .hamburger {
         display: block;
         font-size: 2.5rem;
@@ -100,11 +102,12 @@ nav ul a:hover {
         padding: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
+
     #nav-links.active {
         display: flex;
-        background-color: rgba(0, 0, 0, 0.6); /* Transparent background with a slight dark tint */
+        background-color: rgba(0, 0, 0, 0.6);
         position: absolute;
-        top: 110px; /* Popped down lower */
+        top: 110px;
         right: 20px;
         width: auto;
         padding: 1rem;
@@ -135,22 +138,54 @@ nav ul a:hover {
     }
 
     #hero {
-        display: none !important; /* Remove Hero in Mobile View */
+        display: none !important;
     }
 }
 
-/* Gallery and About Section */
-#gallery .gallery {
+/* Gallery Section */
+/* Gallery Section */
+#gallery {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gallery-header {
+    display: flex;
+    align-items: flex-start;  /* Aligns the heading with the top of the images */
+    margin-bottom: 1rem;
+}
+
+.gallery-header h2 {
+    margin: 0;
+    font-size: 2rem; /* Adjust the font size as needed */
+}
+
+/* Gallery grid */
+.gallery {
+    display: flex;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#gallery .art-piece a {
-    display: block;
+.art-piece {
+    width: 300px;
+    text-align: center;
 }
 
+.art-piece img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.art-piece p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
 #hero {
     display: flex;
     justify-content: center;
@@ -160,7 +195,7 @@ nav ul a:hover {
     color: #292929;
     padding: 0 2rem;
     background-size: cover;
-    margin-top: 20px;  /* Ensure space above the hero */
+    margin-top: 20px;
 }
 
 #hero h2 {
@@ -172,23 +207,11 @@ nav ul a:hover {
     font-size: 1.2rem;
 }
 
-/* Gallery and Art Pieces */
-#gallery .art-piece img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-#gallery .art-piece img:hover {
-    transform: scale(1.05);
-}
-
+/* About Section */
 #about {
     text-align: center;
     padding: 2rem;
-    margin-top: 20px; /* Added space before about section */
+    margin-top: 20px;
 }
 
 #about h2 {
@@ -202,6 +225,7 @@ nav ul a:hover {
     margin: 0 auto;
 }
 
+/* Footer */
 footer {
     background: #4A5568;
     color: #F7FAFC;
