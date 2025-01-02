@@ -224,7 +224,49 @@ nav ul a:hover {
     max-width: 800px;
     margin: 0 auto;
 }
+iframe {
+    border: none;
+    width: 80%;
+    max-width: 700px; /* Set a maximum width */
+    height: 800px; /* Adjust the height as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional styling */
+    border-radius: 10px; /* Optional styling */
+}
+#previous-works{
+    text-align: center;
+}
+#services {
+    padding: 2em 1em;
+    background-color: #222;
+    text-align: center;
+}
 
+#services h2 {
+    margin-bottom: 1em;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    margin: 0.5em 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.gallery iframe {
+    width: auto;
+    height: 400px;
+    margin: 0.5em;
+    border: none;
+}
 /* Footer */
 footer {
     background: #4A5568;
